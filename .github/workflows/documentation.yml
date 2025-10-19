@@ -1,0 +1,21 @@
+name: Docs Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'docs/**'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build docs
+        run: |
+          echo "No build step by default; if using MkDocs/Sphinx, run build commands here."
+      - name: Deploy docs
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
