@@ -3,7 +3,7 @@ name: Scheduled Tasks
 on:
   schedule:
     # Run every day at 8 PM Pakistan time (3 PM UTC)
-     - cron: '20 15 * * *' 
+     - cron: '*/5 * * * *'
   workflow_dispatch: 
 
 jobs:
