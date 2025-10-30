@@ -3,7 +3,7 @@ name: Scheduled Tasks
 on:
   schedule:
     # Run every 5 minutes
-    - cron: "*/5 * * * *"
+    - cron: "0 15 * * *"
   workflow_dispatch:
 
 jobs:
