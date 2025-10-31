@@ -1,4 +1,4 @@
-name: PR Checks & CodeQL
+name: Code Review 
 
 on:
   pull_request:
